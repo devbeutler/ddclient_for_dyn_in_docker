@@ -1,0 +1,13 @@
+#!/bin/bash
+
+apt update
+apt full-upgrade -y
+apt autoremove -y
+apt clean
+
+service ddclient restart
+
+while true
+do
+	sleep 120
+done
